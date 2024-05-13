@@ -1,0 +1,6 @@
+@Q_APlatform_HostAddress = http://localhost:5163
+
+GET {{Q_APlatform_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

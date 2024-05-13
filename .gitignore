@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Q&APlatform/bin/Debug/net8.0
+/.vs/Q&APlatform
+/.vs/ProjectEvaluation/q&aplatform.metadata.v7.bin
+/.vs/ProjectEvaluation/q&aplatform.projects.v7.bin
+/Q&APlatform/obj
