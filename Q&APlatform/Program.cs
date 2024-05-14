@@ -6,9 +6,9 @@ using Q_APlatform.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// Added cosmos db related settings
 builder.Services.Configure<CosmosDbSettings>(builder.Configuration.GetSection(nameof(CosmosDbSettings)));
-
+// Added database context and configured cosmos db settings
 builder.Services.AddDbContext<QuestionAnswerDbContext>
 (
     (IServiceProvider sp, DbContextOptionsBuilder options) =>
@@ -21,6 +21,7 @@ builder.Services.AddDbContext<QuestionAnswerDbContext>
             cosmosDbSettings.DatabaseName);
     }
 );
+// added services related dependency injection
 builder.Services.AddTransient<IApplicationFormService,ApplicationFormService>();
 builder.Services.AddTransient<IQuestionService,QuestionService>();
 
